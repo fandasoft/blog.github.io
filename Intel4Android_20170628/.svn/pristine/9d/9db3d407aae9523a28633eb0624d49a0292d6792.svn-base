@@ -1,0 +1,533 @@
+package com.gagakj.intel4android.network.model;
+
+import java.util.List;
+/**
+ * 当前类注释:
+ * 项目名：NightLive4Android
+ * 包名：com.gagakj.nightlive.network.model
+ * 作者：江清清 on 2016/11/12 09:17
+ * 邮箱：jiangqqlmj@163.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+public class LoginRespose implements IModel {
+    /**
+     * success : true
+     * user : {"account":"admin","accountNonExpired":true,"accountNonLocked":true,"authorities":[{"authority":"mcoa_mcoa.hqswgkbmfzr"},{"authority":"mcoa_bgszr"},{"authority":"mcoa_zgglz"},{"authority":"mcoa_daxhfgjz"},{"authority":"mcoa_dagly"},{"authority":"ROLE_SUPER"}],"createBy":0,"createtime":{"date":1,"day":3,"hours":0,"minutes":0,"month":11,"seconds":0,"time":1291132800000,"timezoneOffset":-480,"year":110},"credentialsNonExpired":true,"email":"zhourong1105@126.com","enabled":true,"fromType":0,"fullname":"超级管理员","id_card":"12312312312","isExpired":0,"isLock":0,"mobile":"13795401597","orgName":"","password":"a4ayc/80/OGda4BO/1o/V0etpOqiLx1JwB5S3beHW0s=","phone":"020-61151619","picture":"","position":"","powers":0,"retype":"","roles":"mcoa_mcoa.hqswgkbmfzr,mcoa_bgszr,mcoa_zgglz,mcoa_daxhfgjz,mcoa_dagly,ROLE_SUPER","sex":"1","status":1,"updateBy":0,"updatetime":null,"userId":1,"userOrgId":0,"username":"admin"}
+     * msg : 用户登录成功!
+     */
+
+    private boolean success;
+    private UserBean user;
+    private String msg;
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public UserBean getUser() {
+        return user;
+    }
+
+    public void setUser(UserBean user) {
+        this.user = user;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public static class UserBean {
+        @Override
+        public String toString() {
+            return "UserBean{" +
+                    "account='" + account + '\'' +
+                    ", accountNonExpired=" + accountNonExpired +
+                    ", accountNonLocked=" + accountNonLocked +
+                    ", createBy=" + createBy +
+                    ", createtime=" + createtime +
+                    ", credentialsNonExpired=" + credentialsNonExpired +
+                    ", email='" + email + '\'' +
+                    ", enabled=" + enabled +
+                    ", fromType=" + fromType +
+                    ", fullname='" + fullname + '\'' +
+                    ", id_card='" + id_card + '\'' +
+                    ", isExpired=" + isExpired +
+                    ", isLock=" + isLock +
+                    ", mobile='" + mobile + '\'' +
+                    ", orgName='" + orgName + '\'' +
+                    ", password='" + password + '\'' +
+                    ", phone='" + phone + '\'' +
+                    ", picture='" + picture + '\'' +
+                    ", position='" + position + '\'' +
+                    ", powers=" + powers +
+                    ", retype='" + retype + '\'' +
+                    ", roles='" + roles + '\'' +
+                    ", sex='" + sex + '\'' +
+                    ", status=" + status +
+                    ", updateBy=" + updateBy +
+                    ", updatetime=" + updatetime +
+                    ", userId=" + userId +
+                    ", userOrgId=" + userOrgId +
+                    ", username='" + username + '\'' +
+                    ", authorities=" + authorities +
+                    '}';
+        }
+
+        /**
+         * account : admin
+         * accountNonExpired : true
+         * accountNonLocked : true
+         * authorities : [{"authority":"mcoa_mcoa.hqswgkbmfzr"},{"authority":"mcoa_bgszr"},{"authority":"mcoa_zgglz"},{"authority":"mcoa_daxhfgjz"},{"authority":"mcoa_dagly"},{"authority":"ROLE_SUPER"}]
+         * createBy : 0
+         * createtime : {"date":1,"day":3,"hours":0,"minutes":0,"month":11,"seconds":0,"time":1291132800000,"timezoneOffset":-480,"year":110}
+         * credentialsNonExpired : true
+         * email : zhourong1105@126.com
+         * enabled : true
+         * fromType : 0
+         * fullname : 超级管理员
+         * id_card : 12312312312
+         * isExpired : 0
+         * isLock : 0
+         * mobile : 13795401597
+         * orgName :
+         * password : a4ayc/80/OGda4BO/1o/V0etpOqiLx1JwB5S3beHW0s=
+         * phone : 020-61151619
+         * picture :
+         * position :
+         * powers : 0
+         * retype :
+         * roles : mcoa_mcoa.hqswgkbmfzr,mcoa_bgszr,mcoa_zgglz,mcoa_daxhfgjz,mcoa_dagly,ROLE_SUPER
+         * sex : 1
+         * status : 1
+         * updateBy : 0
+         * updatetime : null
+         * userId : 1
+         * userOrgId : 0
+         * username : admin
+         */
+
+        private String account;
+        private boolean accountNonExpired;
+        private boolean accountNonLocked;
+        private int createBy;
+        private CreatetimeBean createtime;
+        private boolean credentialsNonExpired;
+        private String email;
+        private boolean enabled;
+        private int fromType;
+        private String fullname;
+        private String id_card;
+        private int isExpired;
+        private int isLock;
+        private String mobile;
+        private String orgName;
+        private String password;
+        private String phone;
+        private String picture;
+        private String position;
+        private int powers;
+        private String retype;
+        private String roles;
+        private String sex;
+        private int status;
+        private int updateBy;
+        private Object updatetime;
+        private int userId;
+        private int userOrgId;
+        private String username;
+        private List<AuthoritiesBean> authorities;
+
+        public String getAccount() {
+            return account;
+        }
+
+        public void setAccount(String account) {
+            this.account = account;
+        }
+
+        public boolean isAccountNonExpired() {
+            return accountNonExpired;
+        }
+
+        public void setAccountNonExpired(boolean accountNonExpired) {
+            this.accountNonExpired = accountNonExpired;
+        }
+
+        public boolean isAccountNonLocked() {
+            return accountNonLocked;
+        }
+
+        public void setAccountNonLocked(boolean accountNonLocked) {
+            this.accountNonLocked = accountNonLocked;
+        }
+
+        public int getCreateBy() {
+            return createBy;
+        }
+
+        public void setCreateBy(int createBy) {
+            this.createBy = createBy;
+        }
+
+        public CreatetimeBean getCreatetime() {
+            return createtime;
+        }
+
+        public void setCreatetime(CreatetimeBean createtime) {
+            this.createtime = createtime;
+        }
+
+        public boolean isCredentialsNonExpired() {
+            return credentialsNonExpired;
+        }
+
+        public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+            this.credentialsNonExpired = credentialsNonExpired;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public void setEnabled(boolean enabled) {
+            this.enabled = enabled;
+        }
+
+        public int getFromType() {
+            return fromType;
+        }
+
+        public void setFromType(int fromType) {
+            this.fromType = fromType;
+        }
+
+        public String getFullname() {
+            return fullname;
+        }
+
+        public void setFullname(String fullname) {
+            this.fullname = fullname;
+        }
+
+        public String getId_card() {
+            return id_card;
+        }
+
+        public void setId_card(String id_card) {
+            this.id_card = id_card;
+        }
+
+        public int getIsExpired() {
+            return isExpired;
+        }
+
+        public void setIsExpired(int isExpired) {
+            this.isExpired = isExpired;
+        }
+
+        public int getIsLock() {
+            return isLock;
+        }
+
+        public void setIsLock(int isLock) {
+            this.isLock = isLock;
+        }
+
+        public String getMobile() {
+            return mobile;
+        }
+
+        public void setMobile(String mobile) {
+            this.mobile = mobile;
+        }
+
+        public String getOrgName() {
+            return orgName;
+        }
+
+        public void setOrgName(String orgName) {
+            this.orgName = orgName;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+
+        public String getPicture() {
+            return picture;
+        }
+
+        public void setPicture(String picture) {
+            this.picture = picture;
+        }
+
+        public String getPosition() {
+            return position;
+        }
+
+        public void setPosition(String position) {
+            this.position = position;
+        }
+
+        public int getPowers() {
+            return powers;
+        }
+
+        public void setPowers(int powers) {
+            this.powers = powers;
+        }
+
+        public String getRetype() {
+            return retype;
+        }
+
+        public void setRetype(String retype) {
+            this.retype = retype;
+        }
+
+        public String getRoles() {
+            return roles;
+        }
+
+        public void setRoles(String roles) {
+            this.roles = roles;
+        }
+
+        public String getSex() {
+            return sex;
+        }
+
+        public void setSex(String sex) {
+            this.sex = sex;
+        }
+
+        public int getStatus() {
+            return status;
+        }
+
+        public void setStatus(int status) {
+            this.status = status;
+        }
+
+        public int getUpdateBy() {
+            return updateBy;
+        }
+
+        public void setUpdateBy(int updateBy) {
+            this.updateBy = updateBy;
+        }
+
+        public Object getUpdatetime() {
+            return updatetime;
+        }
+
+        public void setUpdatetime(Object updatetime) {
+            this.updatetime = updatetime;
+        }
+
+        public int getUserId() {
+            return userId;
+        }
+
+        public void setUserId(int userId) {
+            this.userId = userId;
+        }
+
+        public int getUserOrgId() {
+            return userOrgId;
+        }
+
+        public void setUserOrgId(int userOrgId) {
+            this.userOrgId = userOrgId;
+        }
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
+
+        public List<AuthoritiesBean> getAuthorities() {
+            return authorities;
+        }
+
+        public void setAuthorities(List<AuthoritiesBean> authorities) {
+            this.authorities = authorities;
+        }
+
+        public static class CreatetimeBean {
+            /**
+             * date : 1
+             * day : 3
+             * hours : 0
+             * minutes : 0
+             * month : 11
+             * seconds : 0
+             * time : 1291132800000
+             * timezoneOffset : -480
+             * year : 110
+             */
+
+            private int date;
+            private int day;
+            private int hours;
+            private int minutes;
+            private int month;
+            private int seconds;
+            private long time;
+            private int timezoneOffset;
+            private int year;
+
+            public int getDate() {
+                return date;
+            }
+
+            public void setDate(int date) {
+                this.date = date;
+            }
+
+            public int getDay() {
+                return day;
+            }
+
+            public void setDay(int day) {
+                this.day = day;
+            }
+
+            public int getHours() {
+                return hours;
+            }
+
+            public void setHours(int hours) {
+                this.hours = hours;
+            }
+
+            public int getMinutes() {
+                return minutes;
+            }
+
+            public void setMinutes(int minutes) {
+                this.minutes = minutes;
+            }
+
+            public int getMonth() {
+                return month;
+            }
+
+            public void setMonth(int month) {
+                this.month = month;
+            }
+
+            public int getSeconds() {
+                return seconds;
+            }
+
+            public void setSeconds(int seconds) {
+                this.seconds = seconds;
+            }
+
+            public long getTime() {
+                return time;
+            }
+
+            public void setTime(long time) {
+                this.time = time;
+            }
+
+            public int getTimezoneOffset() {
+                return timezoneOffset;
+            }
+
+            public void setTimezoneOffset(int timezoneOffset) {
+                this.timezoneOffset = timezoneOffset;
+            }
+
+            public int getYear() {
+                return year;
+            }
+
+            public void setYear(int year) {
+                this.year = year;
+            }
+
+            @Override
+            public String toString() {
+                return "CreatetimeBean{" +
+                        "date=" + date +
+                        ", day=" + day +
+                        ", hours=" + hours +
+                        ", minutes=" + minutes +
+                        ", month=" + month +
+                        ", seconds=" + seconds +
+                        ", time=" + time +
+                        ", timezoneOffset=" + timezoneOffset +
+                        ", year=" + year +
+                        '}';
+            }
+        }
+
+        public static class AuthoritiesBean {
+            /**
+             * authority : mcoa_mcoa.hqswgkbmfzr
+             */
+
+            private String authority;
+
+            public String getAuthority() {
+                return authority;
+            }
+
+            public void setAuthority(String authority) {
+                this.authority = authority;
+            }
+
+            @Override
+            public String toString() {
+                return "AuthoritiesBean{" +
+                        "authority='" + authority + '\'' +
+                        '}';
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "LoginRespose{" +
+                "success=" + success +
+                ", user=" + user +
+                ", msg='" + msg + '\'' +
+                '}';
+    }
+}

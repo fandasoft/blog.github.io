@@ -1,0 +1,568 @@
+package com.gagakj.intel4android.network.model;
+
+import java.util.List;
+
+/**
+ * 当前类注释:
+ * 项目名：Intel4Android
+ * 包名：com.gagakj.intel4android.network.model
+ * 作者：江清清 on 2017/6/5 17:44
+ * 邮箱：jiangqq@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+
+public class PendMattersResponse implements IModel {
+
+    /**
+     * results : [{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":2,"day":5,"hours":16,"minutes":33,"month":5,"seconds":11,"time":1496392391200,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000047240032","hasRead":0,"id":"10000047240080","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书归档","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000047240032","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-344434-超级管理员-2017-06-02 16:30:37","tagIds":"","taskDefinitionKey":"task7","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":31,"day":3,"hours":14,"minutes":9,"month":4,"seconds":48,"time":1496210988817,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000037500002,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000046650285","hasRead":0,"id":"10000046850112","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书转发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"br_fzjxzsw:1:10000037500006","processInstanceId":"10000046650285","processName":"分支局收文","revision":1,"runId":0,"status":"","subject":"分支局收文-杨浦海事局行政发文001-超级管理员-2017-05-27 22:34:03","tagIds":"","taskDefinitionKey":"task3","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":22,"day":1,"hours":15,"minutes":32,"month":4,"seconds":12,"time":1495438332340,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045830120","hasRead":0,"id":"10000045830147","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书转发（局领导批示前）","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000045830120","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-收文默认流程（test）170522003-超级管理员-2017-05-22 15:27:29","tagIds":"","taskDefinitionKey":"task3","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":22,"day":1,"hours":14,"minutes":3,"month":4,"seconds":7,"time":1495432987706,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045830071","hasRead":0,"id":"10000045830102","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书转发（局领导批示前）","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000045830071","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-收文默认流程（工会收文test）170522001-超级管理员-2017-05-22 14:01:44","tagIds":"","taskDefinitionKey":"task3","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":22,"day":1,"hours":14,"minutes":0,"month":4,"seconds":58,"time":1495432858721,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045830035","hasRead":0,"id":"10000045830061","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书转发（局领导批示前）","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000045830035","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-收文默认流程（test）170522004-超级管理员-2017-05-22 14:00:07","tagIds":"","taskDefinitionKey":"task3","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":22,"day":1,"hours":11,"minutes":32,"month":4,"seconds":10,"time":1495423930501,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045760240","hasRead":0,"id":"10000045760288","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书归档","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000045760240","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-收文默认流程（行政收文test）170522003-超级管理员-2017-05-22 11:23:09","tagIds":"","taskDefinitionKey":"task7","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":19,"day":5,"hours":16,"minutes":9,"month":4,"seconds":28,"time":1495181368145,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000035700172,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045730099","hasRead":0,"id":"10000045730126","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书归档","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"mrswlc:2:10000035700176","processInstanceId":"10000045730099","processName":"收文流程","revision":1,"runId":0,"status":"","subject":"收文流程-12-超级管理员-2017-05-19 16:07:24","tagIds":"","taskDefinitionKey":"task7","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":19,"day":5,"hours":15,"minutes":28,"month":4,"seconds":36,"time":1495178916896,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000039220009,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000045730016","hasRead":0,"id":"10000045730049","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档,分发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"shhsjxzfw3:3:10000039220013","processInstanceId":"10000045730016","processName":"上海海事局行政发文","revision":1,"runId":0,"status":"","subject":"上海海事局行政发文-测试-超级管理员-2017-05-19 15:25:58","tagIds":"","taskDefinitionKey":"UserTask16","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":8,"day":1,"hours":11,"minutes":18,"month":4,"seconds":45,"time":1494213525523,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000037380290,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000043082644","hasRead":0,"id":"10000043082775","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档，发送文件","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"shhsjjzbghyjy2:2:10000037380294","processInstanceId":"10000043082644","processName":"上海海事局局长办公会议纪要","revision":1,"runId":0,"status":"","subject":"上海海事局局长办公会议纪要-上海海事局会议纪要（test）170508001-超级管理员-2017-05-08 11:02:59","tagIds":"","taskDefinitionKey":"UserTask15","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":8,"day":1,"hours":10,"minutes":51,"month":4,"seconds":54,"time":1494211914763,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000034700182,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000043082413","hasRead":0,"id":"10000043082620","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档,分发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"shhsjdzfwsxw2:1:10000034700188","processInstanceId":"10000043082413","processName":"上海海事局党组发文","revision":1,"runId":0,"status":"","subject":"上海海事局党组发文-上海海事局党组发文（test）170508001-超级管理员-2017-05-08 10:26:43","tagIds":"","taskDefinitionKey":"UserTask13","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":21,"day":2,"hours":15,"minutes":19,"month":2,"seconds":54,"time":1490080794257,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000037500002,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000042720015","hasRead":0,"id":"10000042720232","isAgent":false,"isDivert":false,"ischeck":0,"name":"文书归档","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"br_fzjxzsw:1:10000037500006","processInstanceId":"10000042720015","processName":"分支局收文","revision":1,"runId":0,"status":"","subject":"分支局收文--超级管理员-2017-03-21 11:58:03","tagIds":"","taskDefinitionKey":"UserTask8","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":3,"day":2,"hours":13,"minutes":41,"month":0,"seconds":40,"time":1483422100326,"timezoneOffset":-480,"year":117},"creator":"超级管理员","creatorId":1,"defId":10000039220009,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000041519760","hasRead":0,"id":"10000041519953","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档,分发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"shhsjxzfw3:3:10000039220013","processInstanceId":"10000041519760","processName":"上海海事局行政发文","revision":1,"runId":0,"status":"","subject":"上海海事局行政发文-测试流程保存-超级管理员-2017-01-03 13:38:52","tagIds":"","taskDefinitionKey":"UserTask16","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":13,"day":2,"hours":15,"minutes":58,"month":8,"seconds":25,"time":1473753505247,"timezoneOffset":-480,"year":116},"creator":"超级管理员","creatorId":1,"defId":10000039220009,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000039921038","hasRead":0,"id":"10000039924109","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档,分发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"shhsjxzfw3:3:10000039220013","processInstanceId":"10000039921038","processName":"上海海事局行政发文","revision":1,"runId":0,"status":"","subject":"上海海事局行政发文-测试行政发文PDF不更新问题-0001-超级管理员-2016-09-13 14:04:02","tagIds":"","taskDefinitionKey":"UserTask16","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":13,"day":3,"hours":11,"minutes":29,"month":6,"seconds":27,"time":1468380567384,"timezoneOffset":-480,"year":116},"creator":"超级管理员","creatorId":1,"defId":10000038000137,"delegationState":"","description":"21","dueDate":null,"executionId":"10000039147776","hasRead":0,"id":"10000039147831","isAgent":false,"isDivert":false,"ischeck":0,"name":"监印","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"fzjxzfw:3:10000038000141","processInstanceId":"10000039147776","processName":"分支局行政发文","revision":1,"runId":0,"status":"","subject":"分支局行政发文-测试行政发文流程-0001-超级管理员-2016-07-13 11:24:11","tagIds":"","taskDefinitionKey":"UserTask15","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""},{"allowBatchApprove":0,"allowDivert":0,"assignee":"1","codebefore":"","createTime":{"date":5,"day":2,"hours":16,"minutes":57,"month":6,"seconds":37,"time":1467709057669,"timezoneOffset":-480,"year":116},"creator":"超级管理员","creatorId":1,"defId":10000038000137,"delegationState":"","description":"-1","dueDate":null,"executionId":"10000038912531","hasRead":0,"id":"10000038913372","isAgent":false,"isDivert":false,"ischeck":0,"name":"拟稿人归档,分发","orgName":"","owner":"1","parentTaskId":"","priority":"50","processDefinitionId":"fzjxzfw:3:10000038000141","processInstanceId":"10000038912531","processName":"分支局行政发文","revision":1,"runId":0,"status":"","subject":"分支局行政发文-测试接受修订痕迹-0001-超级管理员-2016-07-05 16:16:12","tagIds":"","taskDefinitionKey":"UserTask16","taskStatus":0,"taskUrl":"","type":"","typeId":0,"typeName":""}]
+     * totalCounts : 19
+     */
+
+    private int totalCounts;
+    private List<ResultsBean> results;
+
+    public int getTotalCounts() {
+        return totalCounts;
+    }
+
+    public void setTotalCounts(int totalCounts) {
+        this.totalCounts = totalCounts;
+    }
+
+    public List<ResultsBean> getResults() {
+        return results;
+    }
+
+    public void setResults(List<ResultsBean> results) {
+        this.results = results;
+    }
+
+    public static class ResultsBean {
+        @Override
+        public String toString() {
+            return "ResultsBean{" +
+                    "allowBatchApprove=" + allowBatchApprove +
+                    ", allowDivert=" + allowDivert +
+                    ", assignee='" + assignee + '\'' +
+                    ", codebefore='" + codebefore + '\'' +
+                    ", createTime=" + createTime +
+                    ", creator='" + creator + '\'' +
+                    ", creatorId=" + creatorId +
+                    ", defId=" + defId +
+                    ", delegationState='" + delegationState + '\'' +
+                    ", description='" + description + '\'' +
+                    ", dueDate=" + dueDate +
+                    ", executionId='" + executionId + '\'' +
+                    ", hasRead=" + hasRead +
+                    ", id='" + id + '\'' +
+                    ", isAgent=" + isAgent +
+                    ", isDivert=" + isDivert +
+                    ", ischeck=" + ischeck +
+                    ", name='" + name + '\'' +
+                    ", orgName='" + orgName + '\'' +
+                    ", owner='" + owner + '\'' +
+                    ", parentTaskId='" + parentTaskId + '\'' +
+                    ", priority='" + priority + '\'' +
+                    ", processDefinitionId='" + processDefinitionId + '\'' +
+                    ", processInstanceId='" + processInstanceId + '\'' +
+                    ", processName='" + processName + '\'' +
+                    ", revision=" + revision +
+                    ", runId=" + runId +
+                    ", status='" + status + '\'' +
+                    ", subject='" + subject + '\'' +
+                    ", tagIds='" + tagIds + '\'' +
+                    ", taskDefinitionKey='" + taskDefinitionKey + '\'' +
+                    ", taskStatus=" + taskStatus +
+                    ", taskUrl='" + taskUrl + '\'' +
+                    ", type='" + type + '\'' +
+                    ", typeId=" + typeId +
+                    ", typeName='" + typeName + '\'' +
+                    '}';
+        }
+
+        /**
+         * allowBatchApprove : 0
+         * allowDivert : 0
+         * assignee : 1
+         * codebefore :
+         * createTime : {"date":2,"day":5,"hours":16,"minutes":33,"month":5,"seconds":11,"time":1496392391200,"timezoneOffset":-480,"year":117}
+         * creator : 超级管理员
+         * creatorId : 1
+         * defId : 10000035700172
+         * delegationState :
+         * description : -1
+         * dueDate : null
+         * executionId : 10000047240032
+         * hasRead : 0
+         * id : 10000047240080
+         * isAgent : false
+         * isDivert : false
+         * ischeck : 0
+         * name : 文书归档
+         * orgName :
+         * owner : 1
+         * parentTaskId :
+         * priority : 50
+         * processDefinitionId : mrswlc:2:10000035700176
+         * processInstanceId : 10000047240032
+         * processName : 收文流程
+         * revision : 1
+         * runId : 0
+         * status :
+         * subject : 收文流程-344434-超级管理员-2017-06-02 16:30:37
+         * tagIds :
+         * taskDefinitionKey : task7
+         * taskStatus : 0
+         * taskUrl :
+         * type :
+         * typeId : 0
+         * typeName :
+         */
+
+        private int allowBatchApprove;
+        private int allowDivert;
+        private String assignee;
+        private String codebefore;
+        private CreateTimeBean createTime;
+        private String creator;
+        private int creatorId;
+        private long defId;
+        private String delegationState;
+        private String description;
+        private Object dueDate;
+        private String executionId;
+        private int hasRead;
+        private String id;
+        private boolean isAgent;
+        private boolean isDivert;
+        private int ischeck;
+        private String name;
+        private String orgName;
+        private String owner;
+        private String parentTaskId;
+        private String priority;
+        private String processDefinitionId;
+        private String processInstanceId;
+        private String processName;
+        private int revision;
+        private int runId;
+        private String status;
+        private String subject;
+        private String tagIds;
+        private String taskDefinitionKey;
+        private int taskStatus;
+        private String taskUrl;
+        private String type;
+        private int typeId;
+        private String typeName;
+
+        public int getAllowBatchApprove() {
+            return allowBatchApprove;
+        }
+
+        public void setAllowBatchApprove(int allowBatchApprove) {
+            this.allowBatchApprove = allowBatchApprove;
+        }
+
+        public int getAllowDivert() {
+            return allowDivert;
+        }
+
+        public void setAllowDivert(int allowDivert) {
+            this.allowDivert = allowDivert;
+        }
+
+        public String getAssignee() {
+            return assignee;
+        }
+
+        public void setAssignee(String assignee) {
+            this.assignee = assignee;
+        }
+
+        public String getCodebefore() {
+            return codebefore;
+        }
+
+        public void setCodebefore(String codebefore) {
+            this.codebefore = codebefore;
+        }
+
+        public CreateTimeBean getCreateTime() {
+            return createTime;
+        }
+
+        public void setCreateTime(CreateTimeBean createTime) {
+            this.createTime = createTime;
+        }
+
+        public String getCreator() {
+            return creator;
+        }
+
+        public void setCreator(String creator) {
+            this.creator = creator;
+        }
+
+        public int getCreatorId() {
+            return creatorId;
+        }
+
+        public void setCreatorId(int creatorId) {
+            this.creatorId = creatorId;
+        }
+
+        public long getDefId() {
+            return defId;
+        }
+
+        public void setDefId(long defId) {
+            this.defId = defId;
+        }
+
+        public String getDelegationState() {
+            return delegationState;
+        }
+
+        public void setDelegationState(String delegationState) {
+            this.delegationState = delegationState;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public Object getDueDate() {
+            return dueDate;
+        }
+
+        public void setDueDate(Object dueDate) {
+            this.dueDate = dueDate;
+        }
+
+        public String getExecutionId() {
+            return executionId;
+        }
+
+        public void setExecutionId(String executionId) {
+            this.executionId = executionId;
+        }
+
+        public int getHasRead() {
+            return hasRead;
+        }
+
+        public void setHasRead(int hasRead) {
+            this.hasRead = hasRead;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public boolean isIsAgent() {
+            return isAgent;
+        }
+
+        public void setIsAgent(boolean isAgent) {
+            this.isAgent = isAgent;
+        }
+
+        public boolean isIsDivert() {
+            return isDivert;
+        }
+
+        public void setIsDivert(boolean isDivert) {
+            this.isDivert = isDivert;
+        }
+
+        public int getIscheck() {
+            return ischeck;
+        }
+
+        public void setIscheck(int ischeck) {
+            this.ischeck = ischeck;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getOrgName() {
+            return orgName;
+        }
+
+        public void setOrgName(String orgName) {
+            this.orgName = orgName;
+        }
+
+        public String getOwner() {
+            return owner;
+        }
+
+        public void setOwner(String owner) {
+            this.owner = owner;
+        }
+
+        public String getParentTaskId() {
+            return parentTaskId;
+        }
+
+        public void setParentTaskId(String parentTaskId) {
+            this.parentTaskId = parentTaskId;
+        }
+
+        public String getPriority() {
+            return priority;
+        }
+
+        public void setPriority(String priority) {
+            this.priority = priority;
+        }
+
+        public String getProcessDefinitionId() {
+            return processDefinitionId;
+        }
+
+        public void setProcessDefinitionId(String processDefinitionId) {
+            this.processDefinitionId = processDefinitionId;
+        }
+
+        public String getProcessInstanceId() {
+            return processInstanceId;
+        }
+
+        public void setProcessInstanceId(String processInstanceId) {
+            this.processInstanceId = processInstanceId;
+        }
+
+        public String getProcessName() {
+            return processName;
+        }
+
+        public void setProcessName(String processName) {
+            this.processName = processName;
+        }
+
+        public int getRevision() {
+            return revision;
+        }
+
+        public void setRevision(int revision) {
+            this.revision = revision;
+        }
+
+        public int getRunId() {
+            return runId;
+        }
+
+        public void setRunId(int runId) {
+            this.runId = runId;
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
+        public String getSubject() {
+            return subject;
+        }
+
+        public void setSubject(String subject) {
+            this.subject = subject;
+        }
+
+        public String getTagIds() {
+            return tagIds;
+        }
+
+        public void setTagIds(String tagIds) {
+            this.tagIds = tagIds;
+        }
+
+        public String getTaskDefinitionKey() {
+            return taskDefinitionKey;
+        }
+
+        public void setTaskDefinitionKey(String taskDefinitionKey) {
+            this.taskDefinitionKey = taskDefinitionKey;
+        }
+
+        public int getTaskStatus() {
+            return taskStatus;
+        }
+
+        public void setTaskStatus(int taskStatus) {
+            this.taskStatus = taskStatus;
+        }
+
+        public String getTaskUrl() {
+            return taskUrl;
+        }
+
+        public void setTaskUrl(String taskUrl) {
+            this.taskUrl = taskUrl;
+        }
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public int getTypeId() {
+            return typeId;
+        }
+
+        public void setTypeId(int typeId) {
+            this.typeId = typeId;
+        }
+
+        public String getTypeName() {
+            return typeName;
+        }
+
+        public void setTypeName(String typeName) {
+            this.typeName = typeName;
+        }
+
+        public static class CreateTimeBean {
+            @Override
+            public String toString() {
+                return "CreateTimeBean{" +
+                        "date=" + date +
+                        ", day=" + day +
+                        ", hours=" + hours +
+                        ", minutes=" + minutes +
+                        ", month=" + month +
+                        ", seconds=" + seconds +
+                        ", time=" + time +
+                        ", timezoneOffset=" + timezoneOffset +
+                        ", year=" + year +
+                        '}';
+            }
+
+            /**
+             * date : 2
+             * day : 5
+             * hours : 16
+             * minutes : 33
+             * month : 5
+             * seconds : 11
+             * time : 1496392391200
+             * timezoneOffset : -480
+             * year : 117
+             */
+
+            private int date;
+            private int day;
+            private int hours;
+            private int minutes;
+            private int month;
+            private int seconds;
+            private long time;
+            private int timezoneOffset;
+            private int year;
+
+            public int getDate() {
+                return date;
+            }
+
+            public void setDate(int date) {
+                this.date = date;
+            }
+
+            public int getDay() {
+                return day;
+            }
+
+            public void setDay(int day) {
+                this.day = day;
+            }
+
+            public int getHours() {
+                return hours;
+            }
+
+            public void setHours(int hours) {
+                this.hours = hours;
+            }
+
+            public int getMinutes() {
+                return minutes;
+            }
+
+            public void setMinutes(int minutes) {
+                this.minutes = minutes;
+            }
+
+            public int getMonth() {
+                return month;
+            }
+
+            public void setMonth(int month) {
+                this.month = month;
+            }
+
+            public int getSeconds() {
+                return seconds;
+            }
+
+            public void setSeconds(int seconds) {
+                this.seconds = seconds;
+            }
+
+            public long getTime() {
+                return time;
+            }
+
+            public void setTime(long time) {
+                this.time = time;
+            }
+
+            public int getTimezoneOffset() {
+                return timezoneOffset;
+            }
+
+            public void setTimezoneOffset(int timezoneOffset) {
+                this.timezoneOffset = timezoneOffset;
+            }
+
+            public int getYear() {
+                return year;
+            }
+
+            public void setYear(int year) {
+                this.year = year;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "PendMattersResponse{" +
+                "totalCounts=" + totalCounts +
+                ", results=" + results +
+                '}';
+    }
+}

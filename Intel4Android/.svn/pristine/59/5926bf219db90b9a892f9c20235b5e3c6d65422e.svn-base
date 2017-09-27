@@ -1,0 +1,40 @@
+package com.gagakj.intel4android.common;
+/**
+ * 当前类注释:
+ * 项目名：NightLive4Android
+ * 包名：com.gagakj.nightlive.common
+ * 作者：江清清 on 2016/11/12 09:23
+ * 邮箱：jiangqqlmj@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+public  class RequestAction {
+    //待办列表
+    public static final int ACTION_RECTODOLISTMATTERS = 103;
+    //在办列表
+    public static final int ACTION_PENDING_MATTERS = 101;
+    //已办列表
+    public static final int ACTION_ALREADYMATTERS = 102;
+
+
+    //OLT信息列表
+    public static final int ACTION_OLEINFOLIST = 104;
+
+
+    //待办列表-挂测
+    public static final int ACTION_RECTODOLISTMATTERS_GC = 105;
+    //在办列表-挂测
+    public static final int ACTION_PENDING_MATTERS_GC = 106;
+    //已办列表-挂测
+    public static final int ACTION_ALREADYMATTERS_GC = 107;
+
+    //获取工程信息
+    public static final int ACTION_TASK_FORM = 108;
+
+    //领取任务
+    public static final int ACTION_REC_TODO_TASK = 109;
+
+    //处理历史
+    public static final int ACTION_TASK_OPINIONS = 110;
+}

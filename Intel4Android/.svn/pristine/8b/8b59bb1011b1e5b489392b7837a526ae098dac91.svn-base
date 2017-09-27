@@ -1,0 +1,131 @@
+package com.gagakj.intel4android.fragment;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.gagakj.intel4android.R;
+import com.gagakj.intel4android.base.BaseFragment;
+import com.gagakj.intel4android.common.RequestAction;
+import com.gagakj.intel4android.network.http.HTTPHelper;
+import com.gagakj.intel4android.network.http.ResultSubscriber;
+import com.gagakj.intel4android.network.model.IModel;
+import com.gagakj.intel4android.network.model.PendingMattersResponse;
+import com.gagakj.intel4android.network.model.TaskFormResponse;
+
+import java.util.HashMap;
+
+/**
+ * 当前类注释:工程信息Fragment
+ * 项目名：Intel4Android
+ * 包名：com.gagakj.intel4android.fragment
+ * 作者：江清清 on 2017/6/8 20:16
+ * 邮箱：jiangqq@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+public class EngineerInfoFragment extends BaseFragment implements ResultSubscriber.OnResultListener{
+    private View mView;
+    //控件定义
+    private TextView tv_gongchengxinxi;
+
+    private static final String KEY = "EngineerInfoFragment";
+
+    private PendingMattersResponse.ResultsBean pendingMattersModel;  //外部传过来的在办任务信息
+    public static EngineerInfoFragment newInstance(PendingMattersResponse.ResultsBean pendingMattersModel){
+        Bundle bundle=new Bundle();
+        bundle.putSerializable(KEY,pendingMattersModel);
+        EngineerInfoFragment fragment=new EngineerInfoFragment();
+        fragment.setArguments(bundle);
+        return  fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle=getArguments();
+        if(bundle!=null) {
+            pendingMattersModel=(PendingMattersResponse.ResultsBean)bundle.getSerializable(KEY);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if(mView == null){
+            mView = inflater.inflate(R.layout.engineer_info_fragment , container , false);
+            initView();
+            initValidata();
+            initListener();
+            bindData();
+        }
+        return mView;
+    }
+
+    @Override
+    public void initView() {
+        super.initView();
+
+        tv_gongchengxinxi = $(R.id.tv_gongchengxinxi);
+    }
+
+    @Nullable
+    @Override
+    public View getView() {
+        return mView;
+    }
+
+    @Override
+    public void initValidata() {
+        super.initValidata();
+        HashMap<String,String> req_map = new HashMap<>();
+        req_map.put("taskId",pendingMattersModel.getId());
+        HTTPHelper.getInstance().taskFormReq(TaskFormResponse.class,req_map, RequestAction.ACTION_TASK_FORM,this);
+    }
+
+    @Override
+    public void initListener() {
+        super.initListener();
+    }
+
+    @Override
+    public void bindData() {
+        super.bindData();
+    }
+
+    @Override
+    public void onStart(int requestType) {
+
+    }
+
+    @Override
+    public void onCompleted(int requestType) {
+
+    }
+
+    @Override
+    public void onError(int requestType) {
+
+    }
+
+    @Override
+    public void onNext(IModel t, int requestType) {
+        if(requestType == RequestAction.ACTION_TASK_FORM){
+            TaskFormResponse taskFormResponse = (TaskFormResponse)t;
+            if(taskFormResponse.isSuccess()){
+                renderTaskForm(taskFormResponse.getBizProjectInfo());
+            }
+        }
+    }
+
+    /**
+     * 进行刷新工程信息
+     * @param bizProjectInfoBean
+     */
+    private void renderTaskForm(TaskFormResponse.BizProjectInfoBean bizProjectInfoBean){
+        //tv_gongchengxinxi.setText(bizProjectInfoBean.get);
+    }
+}

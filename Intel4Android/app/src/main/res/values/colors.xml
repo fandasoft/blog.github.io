@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6919</color>
+    <color name="colorPrimaryDark">#FF6919</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#20b6ff</color>
+    <color name="text">#aaa</color>
+    <color name="btn">#FFB933</color>
+    <color name="title">#FFB933</color>
+    <color name="tv_color">#626262</color>
+    <color name="main_radio_click">#CD459B</color>
+    <color name="hint">#CACACA</color>
+    <color name="gray_light_s">#EDEDED</color>
+    <color name="used_car_listused_car_list_select_select">#ffb933</color>
+    <color name="main_color">#3B1D77</color>
+    <color name="main_tv">#CD459B</color>
+    <color name="main_bg_live">#F0F0F0</color>
+    <color name="color_male">#4AA0F7</color>
+    <color name="color_mid_black">#444</color>
+    <color name="color_wechat_bg">#00C342</color>
+    <color name="color_qq_bg">#368EF7</color>
+    <color name="color_sina_bg">#EC0022</color>
+    <color name="selection_ripple">#a5c5ccf5</color>
+    <color name="selection_mask">#8f000000</color>
+    <color name="color_car_cert">#46C992</color>
+    <color name="color_cancel">#FF0033</color>
+    <color name="color_record_start">#AA12F5</color>
+    <color name="color_default_hit">#999999</color>
+    <color name="color_tip_already_bar">#005390</color>
+
+    <color name="global_bg">#9000</color>
+    <color name="color_green_01d9ae">#01D9AE</color>
+    <color name="color_blue_0888ff">#0888ff</color>
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="grey_white">#F7F7F7</color>
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_activity_blue_bg">#f7389fff</color>
+    <color name="color_green_00ae8c">#00ae8c</color>
+    <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+    <color name="green_4DC0A4">#4DC0A4</color>
+    <color name="gray7">#c5c4c4</color>
+    <color name="GreyWhite">#F7F7F7</color>
+    <color name="color_register_text_normal_1ca086">#1ca086</color>
+    <color name="color_register_text_normal_246b61">#246b61</color>
+    <color name="color_register_text_disable_39b79d">#39b79d</color>
+    <color name="im_list_select_hover">#dbdbdb</color>
+    <color name="color_aaaaaa_content_text">#ffaaaaaa</color>
+    <color name="title_color_01d9ae">#01D9AE</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_green_disable">#a2efe0</color>
+    <color name="color_green_00d3a9">#ff00D3A9</color>
+    <color name="color_red_ccfa3c55">#ccfa3c55</color>
+    <color name="color_black_b3000000">#b3000000</color>
+    <color name="color_white_66ffffff">#66ffffff</color>
+    <color name="color_white_ffffffff">#ffffffff</color>
+    <color name="color_blue_1081ea">#1081ea</color>
+    <color name="color_grey_eaeaea">#eaeaea</color>
+    <color name="color_green_4bbda2">#4bbda2</color>
+    <color name="color_yellow_fcf3cd">#fcf3cd</color>
+    <color name="color_blue_3a9efb">#3a9efb</color>
+    <color name="color_green_89fbff">#89fbff</color>
+    <color name="order_detail_bg">#D8D8D8</color>
+
+    <!-- main bg color -->
+    <color name="g_child_page_bg_color">#FFFFFF</color>
+    <color name="list_bg_color">#FFFFFF</color>
+    <color name="main_bg_color">#FFFFFF</color>
+
+    <!-- session -->
+    <color name="color_message_default_bg">#e9ecf0</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+    <color name="help_color">#ff999999</color>
+
+    <!-- image picker -->
+    <color name="color_split_line_d9d9d9">#d9d9d9</color>
+    <color name="color_split_line_cccccc">#cccccc</color>
+
+    <!-- contact -->
+    <color name="contact_list_hover">#d9d9d9</color>
+    <color name="contact_letter_idx_bg">#33000000</color>
+    <color name="contacts_letters_color">#80807c</color>
+    <color name="bussiness_card_gridview_bg">#ECF1F5</color>
+    <color name="press_mask">#33000000</color>
+    <color name="color_grey_ababab">#ababab</color>
+    <color name="color_yellow_796413">#796413</color>
+    <color name="color_yellow_b39729">#b39729</color>
+    <color name="color_red_f04c62">#f04c62</color>
+
+    <!-- setting -->
+    <color name="color_black_ff333333">#ff333333</color>
+    <color name="color_black_ff666666">#ff666666</color>
+    <color name="color_black_ff999999">#ff999999</color>
+    <color name="color_gray_bfc2c5">#bfc2c5</color>
+
+    <!-- 全局使用的颜色 -->
+    <color name="titlebar_bg_color">#3C3C3C</color>
+    <!-- 这是Login相关界面中的颜色 -->
+    <color name="login_txt_hint_color">#555555</color>
+    <color name="register_split_line_color">#c2d4ec</color>
+    <color name="login_split_line_color">#c1d3cc</color>
+    <color name="login_btn_def_color">#98FB98</color>
+    <color name="re_login_btn_def_color">#6fd66b</color>
+    <color name="login_btn_sel_color">#006400</color>
+    <color name="relogin_txt_color">#555555</color>
+    <color name="swich_user_sel_color">#3F80DC</color>
+    <color name="circular_progressbar_color">#3F80DD</color>
+    <color name="circular_progressbar_bg_color">#D0D4D8</color>
+    <!-- 注册头像设置页面 -->
+    <color name="regist_photo_focus_color">#3F80DD</color>
+    <!-- 主页面 -->
+    <color name="action_bar_txt_color">#969696</color>
+    <color name="actionbar_sel_color">#1c1c1c</color>
+    <color name="me_info_edit_color">#2d2d2d</color>
+    <color name="me_info_hint_color">#cfcdce</color>
+    <color name="actionbar_pres_color">#3f80dc</color>
+    <color name="menu_item_back_pres_color">#3773cb</color>
+    <color name="actionbar_def_color">#3C3C3C</color>
+    <color name="jpush_blue">#3f80dc</color>
+    <color name="main_view_split_line_color">#C8C8C8</color>
+    <color name="conv_list_split_line_color">#d6d6d6</color>
+    <color name="contacts_pinner_bg">#F2F8F8F8</color>
+    <color name="contacts_pinner_txt">#858585</color>
+    <color name="contacts_txt_color">#0479FB</color>
+    <color name="me_split_line_color">#d0d0d0</color>
+    <color name="msg_list_item_sel_color">#A3C2EF</color>
+    <color name="item_click_bg_color">#dddddd</color>
+    <color name="friend_request_acept">#808080</color>
+    <color name="friend_content_text_color">#7f7f7f</color>
+    <color name="chat_text_color">#373334</color>
+    <color name="chat_detail_hit_color">#3C3C3C</color>
+    <color name="chat_detail_item_hit_color">#555555</color>
+    <color name="chat_detail_item_content_color">#808080</color>
+    <color name="chat_detail_split_line_color">#d3d3d3</color>
+    <color name="dialog_select_color">#d4d4d4</color>
+    <color name="finish_btn_unclickable_color">#b9ebb8</color>
+    <color name="finish_btn_clickable_color">#6fd66b</color>
+    <color name="default_cursor_color">#8db4eb</color>
+    <color name="menu_item_click_color">#346fc3</color>
+    <color name="me_no_picture_color">#e1e1e1</color>
+    <color name="reset_password_title_color">#4e4e4e</color>
+    <color name="translucent_background">#60000000</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+
+    <!-- 灰色 -->
+
+    <color name="grey">#808080</color>
+
+    <!-- 灰色 -->
+
+
+    <color name="green">#008000</color>
+
+    <!-- 绿色 -->
+
+    <color name="darkgreen">#006400</color>
+
+    <!-- 暗绿色 -->
+
+
+    <!-- 蓝色 -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_trans">#88FFFFFF</color>
+
+    <color name="title_grey">#CED9E7</color>
+
+    <color name="light_blue">#8CA4FF</color>
+    <color name="text_color_count">#F6BB42</color>
+    <color name="text_label_color">#595976</color>
+    <color name="text_context_color">#4D4D4D</color>
+    <color name="text_time_color">#9393AA</color>
+    <color name="text_yellow_color">#FFC024</color>
+    <color name="devide_line_color">#CCCCCC</color>
+    <color name="dada_background_color">#363546</color>
+    <color name="group_small_text_color">#ABAABF</color>
+    <color name="devider_view_color">#EDEDF3</color>
+    <color name="gonglue_detail_color">#FFCE54</color>
+
+    <color name="equipment_text_color">#5D9CEC</color>
+    <color name="diet_text_color">#F6BB42</color>
+    <color name="skill_text_color">#AC92EC</color>
+    <color name="nickname_color">#FDBF2E</color>
+    <color name="live_text_color">#FFFFFE</color>
+    <color name="dialog_click_color">#0084FF</color>
+    <color name="dialog_black">#272636</color>
+    <color name="edit_text_color">#ABAABF</color>
+    <color name="release_layout_bgcolor">#EDEDF3</color>
+    <color name="live_chat">#F6BB42</color>
+
+    <color name="change_ed_hit">#8fff</color>
+    <color name="change_ed">#8fff</color>
+
+    <!-- 登陆输入字体颜色 -->
+    <color name="input_color">#898989</color>
+    <color name="main_bg">#f7f7f7</color>
+
+
+    <color name="task_box_tv">#323232</color>
+
+</resources>

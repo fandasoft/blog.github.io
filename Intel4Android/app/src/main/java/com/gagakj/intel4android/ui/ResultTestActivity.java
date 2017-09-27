@@ -1,0 +1,150 @@
+package com.gagakj.intel4android.ui;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.gagakj.intel4android.R;
+import com.gagakj.intel4android.base.BaseActivity;
+import com.gagakj.intel4android.common.RequestAction;
+import com.gagakj.intel4android.network.http.HTTPHelper;
+import com.gagakj.intel4android.network.http.ResultSubscriber;
+import com.gagakj.intel4android.network.model.IModel;
+import com.gagakj.intel4android.network.model.OltInfoListResponse;
+import com.gagakj.intel4android.network.model.RecycleRecourceResponse;
+import com.gagakj.intel4android.utils.Log;
+
+import java.util.HashMap;
+
+/**
+ * 当前类注释:挂测结果页面
+ * 项目名：Intel4Android
+ * 包名：com.gagakj.intel4android.ui
+ * 作者：江清清 on 2017/6/8 15:05
+ * 邮箱：jiangqq@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+public class ResultTestActivity extends BaseActivity implements View.OnClickListener,ResultSubscriber.OnResultListener{
+    private LinearLayout linear_back;
+    private Intent mIntent;
+    private TextView tv_oltCname,tv_address,tv_ip,tv_vlan,tv_pon,tv_obd,tv_test_status;
+    private String gc_id;
+    private TextView tv_report_result,tv_report_again,tv_report_back;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.result_test_layout);
+        mIntent = getIntent();
+        initView();
+        initValidata();
+        initListener();
+        bindData();
+    }
+    @Override
+    public void initView() {
+        super.initView();
+        linear_back = $(R.id.linear_back);
+        tv_oltCname = $(R.id.tv_oltCname);
+        tv_address = $(R.id.tv_address);
+        tv_ip = $(R.id.tv_ip);
+        tv_vlan = $(R.id.tv_vlan);
+        tv_pon = $(R.id.tv_pon);
+        tv_obd = $(R.id.tv_obd);
+
+        tv_test_status = $(R.id.tv_test_status);
+
+        tv_report_result = $(R.id.tv_report_result);
+        tv_report_again = $(R.id.tv_report_again);
+        tv_report_back = $(R.id.tv_report_back);
+    }
+
+    @Override
+    public void initValidata() {
+        super.initValidata();
+        if(mIntent != null){
+            gc_id = mIntent.getStringExtra("gc_id");
+            Log.d("zttjiangqq","id:"+gc_id);
+            HashMap<String,String> req_map = new HashMap<>();
+            req_map.put("id",gc_id);
+            HTTPHelper.getInstance().recycleRecourceReq(RecycleRecourceResponse.class,req_map, RequestAction.ACTION_RECYCLE_RECOURCE,this);
+            showProgressDialog("正在获取中...");
+        }
+    }
+
+    @Override
+    public void initListener() {
+        super.initListener();
+        linear_back.setOnClickListener(this);
+
+        tv_report_result.setOnClickListener(this);
+        tv_report_again.setOnClickListener(this);
+        tv_report_back.setOnClickListener(this);
+    }
+
+    @Override
+    public void bindData() {
+        super.bindData();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.linear_back :
+                finish(this);
+                break;
+            case R.id.tv_report_result:
+                //反馈结果
+                break;
+            case R.id.tv_report_again:
+                //重新测试
+                finish(this);
+                break;
+            case R.id.tv_report_back:
+                //返回
+                break;
+            default:
+                break;
+        }
+    }
+
+    @Override
+    public void onStart(int requestType) {
+
+    }
+
+    @Override
+    public void onCompleted(int requestType) {
+
+    }
+
+    @Override
+    public void onError(int requestType) {
+        hideProgressDialog();
+        showShortToast("数据加载失败!");
+    }
+
+    @Override
+    public void onNext(IModel t, int requestType) {
+        hideProgressDialog();
+        if(requestType == RequestAction.ACTION_RECYCLE_RECOURCE){
+            RecycleRecourceResponse recycleRecourceResponse = (RecycleRecourceResponse)t;
+            if(recycleRecourceResponse.isSuccess()){
+                renderGcInfo(recycleRecourceResponse.getBizOltGcInfo());
+            }
+        }
+    }
+
+    private void renderGcInfo(RecycleRecourceResponse.BizOltGcInfoBean  bizOltGcInfoBean){
+        tv_oltCname.setText(bizOltGcInfoBean.getOltCname());
+        tv_address.setText(bizOltGcInfoBean.getOltIp());
+        tv_ip.setText(bizOltGcInfoBean.getOltIp());
+        tv_vlan.setText(bizOltGcInfoBean.getWWlan());
+        tv_pon.setText(bizOltGcInfoBean.getPonPort());
+        tv_obd.setText(bizOltGcInfoBean.getObd());
+        tv_test_status.setText("挂测结果:"+bizOltGcInfoBean.getResult());
+    }
+}

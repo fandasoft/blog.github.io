@@ -1,0 +1,545 @@
+package com.gagakj.intel4android.network.model;
+
+import java.util.List;
+/**
+ * 当前类注释:完结列表返回数据
+ * 项目名：Intel4Android
+ * 包名：com.gagakj.intel4android.network.model
+ * 作者：江清清 on 2017/6/8 19:53
+ * 邮箱：jiangqq@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+
+
+public class CompleteMattersResponse implements IModel {
+
+    /**
+     * results : [{"createBy":null,"createtime":1496911567000,"updatetime":null,"updateBy":null,"runId":10000047600284,"defId":10000047600079,"subject":"测试状态-测试入场申请-超级管理员-2017-06-08 16:46:07","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047600285","actDefId":"testEnterKey:1:10000047600078","businessKey":"10000047600283","businessUrl":"/platform/test/testEnter/modify.ht?id={pk}","endTime":1496911688000,"duration":1983,"processName":"测试入场申请","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":1983,"typeId":10000035590260,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"testEnterKey","startNode":"","isFormal":0,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496827664000,"updatetime":null,"updateBy":null,"runId":10000047570126,"defId":10000044320031,"subject":"测试状态-文件销毁申请-超级管理员-2017-06-07 17:27:44","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047570127","actDefId":"wjgg:2:10000044320035","businessKey":"10000047570125","businessUrl":"/platform/sh/shHaishijuWjgg/modify.ht?id={pk}","endTime":1496828565000,"duration":901431,"processName":"文件销毁申请","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000035590289,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"wjgg","startNode":"","isFormal":0,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496826124000,"updatetime":null,"updateBy":null,"runId":10000047570006,"defId":10000045520042,"subject":"测试状态-质量体系文件新增流程-超级管理员-2017-06-07 17:02:04","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047570007","actDefId":"wjxzlc:1:10000045520041","businessKey":"10000047570005","businessUrl":"/platform/sh/shHaiShiJuWjggt/modify.ht?id={pk}","endTime":1496827237000,"duration":1113957,"processName":"质量体系文件新增流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000035590289,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"wjxzlc","startNode":"","isFormal":0,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496797731000,"updatetime":null,"updateBy":null,"runId":10000047530366,"defId":10000019660000,"subject":"公告审批流程--超级管理员-2017-06-07 09:08:51","creatorId":1,"creator":"超级管理员","busDescp":null,"status":3,"actInstId":"10000047530367","actDefId":"ggsplc:2:10000019660010","businessKey":"10000047530365","businessUrl":"/platform/notice/sysNotice/get.ht?id={pk}","endTime":1496798087000,"duration":253965,"processName":"公告审批流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":253965,"typeId":10000035590007,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"ggsplc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496746093000,"updatetime":null,"updateBy":null,"runId":10000047530212,"defId":10000019660000,"subject":"公告审批流程--超级管理员-2017-06-06 18:48:13","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047530213","actDefId":"ggsplc:2:10000019660010","businessKey":"10000047530211","businessUrl":"/platform/notice/sysNotice/get.ht?id={pk}","endTime":1496747222000,"duration":1129575,"processName":"公告审批流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000035590007,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"ggsplc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496744459000,"updatetime":null,"updateBy":null,"runId":10000047530147,"defId":10000019660000,"subject":"公告审批流程--超级管理员-2017-06-06 18:20:59","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047530148","actDefId":"ggsplc:2:10000019660010","businessKey":"10000047530146","businessUrl":"/platform/notice/sysNotice/get.ht?id={pk}","endTime":1496764853000,"duration":20394133,"processName":"公告审批流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000035590007,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"ggsplc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496744394000,"updatetime":null,"updateBy":null,"runId":10000047530116,"defId":10000019660000,"subject":"公告审批流程--超级管理员-2017-06-06 18:19:54","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047530117","actDefId":"ggsplc:2:10000019660010","businessKey":"10000046950004","businessUrl":"/platform/notice/sysNotice/get.ht?id={pk}","endTime":1496797354000,"duration":52537188,"processName":"公告审批流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":52537188,"typeId":10000035590007,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"ggsplc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496730529000,"updatetime":null,"updateBy":null,"runId":10000047480288,"defId":10000035700172,"subject":"收文流程-标题tittle-超级管理员-2017-06-06 14:28:49","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047480289","actDefId":"mrswlc:2:10000035700176","businessKey":"10000047480286","businessUrl":"/gongwen/gongwen/swmrlc/modify.ht?id={pk}","endTime":1496730659000,"duration":130066,"processName":"收文流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094374,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"mrswlc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496727758000,"updatetime":null,"updateBy":null,"runId":10000047480025,"defId":10000039220009,"subject":"上海海事局行政发文-关于上海海事局行政发文标题-超级管理员-2017-06-06 13:42:38","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047480026","actDefId":"shhsjxzfw3:3:10000039220013","businessKey":"10000047480023","businessUrl":"/gongwen/gongwen/shhsjxzfwsxw/modify.ht?id={pk}","endTime":1496730158000,"duration":2400884,"processName":"上海海事局行政发文","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094525,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"shhsjxzfw3","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496712031000,"updatetime":null,"updateBy":null,"runId":10000047460031,"defId":10000039700055,"subject":"测试状态-PDF转换验证流程-超级管理员-2017-06-06 09:20:31","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047460032","actDefId":"PDFzhyzlc:2:10000039700059","businessKey":"10000047460030","businessUrl":"/gongwen/gongwen/gwFwInformation/modify.ht?id={pk}","endTime":1496712459000,"duration":428208,"processName":"PDF转换验证流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000035590348,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"PDFzhyzlc","startNode":"","isFormal":0,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496657561000,"updatetime":null,"updateBy":null,"runId":10000047440013,"defId":10000037500002,"subject":"分支局收文-关于杨浦行政公文张影测试06月05日18:12-超级管理员-2017-06-05 18:12:41","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047440014","actDefId":"br_fzjxzsw:1:10000037500006","businessKey":"10000047440011","businessUrl":"/gongwen/gongwen/gwSwInformation/modify.ht?id={pk}","endTime":1496657740000,"duration":179948,"processName":"分支局收文","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094376,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"br_fzjxzsw","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496655771000,"updatetime":null,"updateBy":null,"runId":10000047430208,"defId":10000035700172,"subject":"收文流程-今天买个茶叶喝喝-超级管理员-2017-06-05 17:42:51","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047430209","actDefId":"mrswlc:2:10000035700176","businessKey":"10000047430206","businessUrl":"/gongwen/gongwen/swmrlc/modify.ht?id={pk}","endTime":1496655915000,"duration":144696,"processName":"收文流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094374,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"mrswlc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496655088000,"updatetime":null,"updateBy":null,"runId":10000047430140,"defId":10000035700172,"subject":"收文流程-标题测试完整6月5日17:30-超级管理员-2017-06-05 17:31:28","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047430141","actDefId":"mrswlc:2:10000035700176","businessKey":"10000047430138","businessUrl":"/gongwen/gongwen/swmrlc/modify.ht?id={pk}","endTime":1496655170000,"duration":82206,"processName":"收文流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094374,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"mrswlc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496653946000,"updatetime":null,"updateBy":null,"runId":10000047430072,"defId":10000035700172,"subject":"收文流程-标题是关于6月5日怎么happy-超级管理员-2017-06-05 17:12:26","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047430073","actDefId":"mrswlc:2:10000035700176","businessKey":"10000047430070","businessUrl":"/gongwen/gongwen/swmrlc/modify.ht?id={pk}","endTime":1496654048000,"duration":102899,"processName":"收文流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094374,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"mrswlc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null},{"createBy":null,"createtime":1496653406000,"updatetime":null,"updateBy":null,"runId":10000047430005,"defId":10000035700172,"subject":"收文流程-关于6月5日 下雨 讨论-超级管理员-2017-06-05 17:03:26","creatorId":1,"creator":"超级管理员","busDescp":null,"status":2,"actInstId":"10000047430006","actDefId":"mrswlc:2:10000035700176","businessKey":"10000047430003","businessUrl":"/gongwen/gongwen/swmrlc/modify.ht?id={pk}","endTime":1496653535000,"duration":129986,"processName":"收文流程","pkName":"","tableName":"","parentId":0,"startOrgName":"科技信息处","startOrgId":10000031470039,"recover":0,"formDefId":0,"dsAlias":null,"formKeyUrl":null,"formType":null,"relthrow":null,"grade":1,"lastSubmitDuration":null,"typeId":10000039094374,"typeName":null,"tagids":null,"orgName":null,"allowBackToStart":false,"allowFinishedDivert":1,"copyId":null,"flowKey":"mrswlc","startNode":"","isFormal":1,"isPrintForm":0,"authorizeRight":null,"taskUrl":null}]
+     * totalCounts : 235
+     */
+
+    private int totalCounts;
+    private List<ResultsBean> results;
+
+    public int getTotalCounts() {
+        return totalCounts;
+    }
+
+    public void setTotalCounts(int totalCounts) {
+        this.totalCounts = totalCounts;
+    }
+
+    public List<ResultsBean> getResults() {
+        return results;
+    }
+
+    public void setResults(List<ResultsBean> results) {
+        this.results = results;
+    }
+
+    public static class ResultsBean {
+        /**
+         * createBy : null
+         * createtime : 1496911567000
+         * updatetime : null
+         * updateBy : null
+         * runId : 10000047600284
+         * defId : 10000047600079
+         * subject : 测试状态-测试入场申请-超级管理员-2017-06-08 16:46:07
+         * creatorId : 1
+         * creator : 超级管理员
+         * busDescp : null
+         * status : 2
+         * actInstId : 10000047600285
+         * actDefId : testEnterKey:1:10000047600078
+         * businessKey : 10000047600283
+         * businessUrl : /platform/test/testEnter/modify.ht?id={pk}
+         * endTime : 1496911688000
+         * duration : 1983
+         * processName : 测试入场申请
+         * pkName :
+         * tableName :
+         * parentId : 0
+         * startOrgName : 科技信息处
+         * startOrgId : 10000031470039
+         * recover : 0
+         * formDefId : 0
+         * dsAlias : null
+         * formKeyUrl : null
+         * formType : null
+         * relthrow : null
+         * grade : 1
+         * lastSubmitDuration : 1983
+         * typeId : 10000035590260
+         * typeName : null
+         * tagids : null
+         * orgName : null
+         * allowBackToStart : false
+         * allowFinishedDivert : 1
+         * copyId : null
+         * flowKey : testEnterKey
+         * startNode :
+         * isFormal : 0
+         * isPrintForm : 0
+         * authorizeRight : null
+         * taskUrl : null
+         */
+
+        private Object createBy;
+        private long createtime;
+        private Object updatetime;
+        private Object updateBy;
+        private long runId;
+        private long defId;
+        private String subject;
+        private int creatorId;
+        private String creator;
+        private Object busDescp;
+        private int status;
+        private String actInstId;
+        private String actDefId;
+        private String businessKey;
+        private String businessUrl;
+        private long endTime;
+        private int duration;
+        private String processName;
+        private String pkName;
+        private String tableName;
+        private int parentId;
+        private String startOrgName;
+        private long startOrgId;
+        private int recover;
+        private int formDefId;
+        private Object dsAlias;
+        private Object formKeyUrl;
+        private Object formType;
+        private Object relthrow;
+        private int grade;
+        private int lastSubmitDuration;
+        private long typeId;
+        private Object typeName;
+        private Object tagids;
+        private Object orgName;
+        private boolean allowBackToStart;
+        private int allowFinishedDivert;
+        private Object copyId;
+        private String flowKey;
+        private String startNode;
+        private int isFormal;
+        private int isPrintForm;
+        private Object authorizeRight;
+        private Object taskUrl;
+
+        public Object getCreateBy() {
+            return createBy;
+        }
+
+        public void setCreateBy(Object createBy) {
+            this.createBy = createBy;
+        }
+
+        public long getCreatetime() {
+            return createtime;
+        }
+
+        public void setCreatetime(long createtime) {
+            this.createtime = createtime;
+        }
+
+        public Object getUpdatetime() {
+            return updatetime;
+        }
+
+        public void setUpdatetime(Object updatetime) {
+            this.updatetime = updatetime;
+        }
+
+        public Object getUpdateBy() {
+            return updateBy;
+        }
+
+        public void setUpdateBy(Object updateBy) {
+            this.updateBy = updateBy;
+        }
+
+        public long getRunId() {
+            return runId;
+        }
+
+        public void setRunId(long runId) {
+            this.runId = runId;
+        }
+
+        public long getDefId() {
+            return defId;
+        }
+
+        public void setDefId(long defId) {
+            this.defId = defId;
+        }
+
+        public String getSubject() {
+            return subject;
+        }
+
+        public void setSubject(String subject) {
+            this.subject = subject;
+        }
+
+        public int getCreatorId() {
+            return creatorId;
+        }
+
+        public void setCreatorId(int creatorId) {
+            this.creatorId = creatorId;
+        }
+
+        public String getCreator() {
+            return creator;
+        }
+
+        public void setCreator(String creator) {
+            this.creator = creator;
+        }
+
+        public Object getBusDescp() {
+            return busDescp;
+        }
+
+        public void setBusDescp(Object busDescp) {
+            this.busDescp = busDescp;
+        }
+
+        public int getStatus() {
+            return status;
+        }
+
+        public void setStatus(int status) {
+            this.status = status;
+        }
+
+        public String getActInstId() {
+            return actInstId;
+        }
+
+        public void setActInstId(String actInstId) {
+            this.actInstId = actInstId;
+        }
+
+        public String getActDefId() {
+            return actDefId;
+        }
+
+        public void setActDefId(String actDefId) {
+            this.actDefId = actDefId;
+        }
+
+        public String getBusinessKey() {
+            return businessKey;
+        }
+
+        public void setBusinessKey(String businessKey) {
+            this.businessKey = businessKey;
+        }
+
+        public String getBusinessUrl() {
+            return businessUrl;
+        }
+
+        public void setBusinessUrl(String businessUrl) {
+            this.businessUrl = businessUrl;
+        }
+
+        public long getEndTime() {
+            return endTime;
+        }
+
+        public void setEndTime(long endTime) {
+            this.endTime = endTime;
+        }
+
+        public int getDuration() {
+            return duration;
+        }
+
+        public void setDuration(int duration) {
+            this.duration = duration;
+        }
+
+        public String getProcessName() {
+            return processName;
+        }
+
+        public void setProcessName(String processName) {
+            this.processName = processName;
+        }
+
+        public String getPkName() {
+            return pkName;
+        }
+
+        public void setPkName(String pkName) {
+            this.pkName = pkName;
+        }
+
+        public String getTableName() {
+            return tableName;
+        }
+
+        public void setTableName(String tableName) {
+            this.tableName = tableName;
+        }
+
+        public int getParentId() {
+            return parentId;
+        }
+
+        public void setParentId(int parentId) {
+            this.parentId = parentId;
+        }
+
+        public String getStartOrgName() {
+            return startOrgName;
+        }
+
+        public void setStartOrgName(String startOrgName) {
+            this.startOrgName = startOrgName;
+        }
+
+        public long getStartOrgId() {
+            return startOrgId;
+        }
+
+        public void setStartOrgId(long startOrgId) {
+            this.startOrgId = startOrgId;
+        }
+
+        public int getRecover() {
+            return recover;
+        }
+
+        public void setRecover(int recover) {
+            this.recover = recover;
+        }
+
+        public int getFormDefId() {
+            return formDefId;
+        }
+
+        public void setFormDefId(int formDefId) {
+            this.formDefId = formDefId;
+        }
+
+        public Object getDsAlias() {
+            return dsAlias;
+        }
+
+        public void setDsAlias(Object dsAlias) {
+            this.dsAlias = dsAlias;
+        }
+
+        public Object getFormKeyUrl() {
+            return formKeyUrl;
+        }
+
+        public void setFormKeyUrl(Object formKeyUrl) {
+            this.formKeyUrl = formKeyUrl;
+        }
+
+        public Object getFormType() {
+            return formType;
+        }
+
+        public void setFormType(Object formType) {
+            this.formType = formType;
+        }
+
+        public Object getRelthrow() {
+            return relthrow;
+        }
+
+        public void setRelthrow(Object relthrow) {
+            this.relthrow = relthrow;
+        }
+
+        public int getGrade() {
+            return grade;
+        }
+
+        public void setGrade(int grade) {
+            this.grade = grade;
+        }
+
+        public int getLastSubmitDuration() {
+            return lastSubmitDuration;
+        }
+
+        public void setLastSubmitDuration(int lastSubmitDuration) {
+            this.lastSubmitDuration = lastSubmitDuration;
+        }
+
+        public long getTypeId() {
+            return typeId;
+        }
+
+        public void setTypeId(long typeId) {
+            this.typeId = typeId;
+        }
+
+        public Object getTypeName() {
+            return typeName;
+        }
+
+        public void setTypeName(Object typeName) {
+            this.typeName = typeName;
+        }
+
+        public Object getTagids() {
+            return tagids;
+        }
+
+        public void setTagids(Object tagids) {
+            this.tagids = tagids;
+        }
+
+        public Object getOrgName() {
+            return orgName;
+        }
+
+        public void setOrgName(Object orgName) {
+            this.orgName = orgName;
+        }
+
+        public boolean isAllowBackToStart() {
+            return allowBackToStart;
+        }
+
+        public void setAllowBackToStart(boolean allowBackToStart) {
+            this.allowBackToStart = allowBackToStart;
+        }
+
+        public int getAllowFinishedDivert() {
+            return allowFinishedDivert;
+        }
+
+        public void setAllowFinishedDivert(int allowFinishedDivert) {
+            this.allowFinishedDivert = allowFinishedDivert;
+        }
+
+        public Object getCopyId() {
+            return copyId;
+        }
+
+        public void setCopyId(Object copyId) {
+            this.copyId = copyId;
+        }
+
+        public String getFlowKey() {
+            return flowKey;
+        }
+
+        public void setFlowKey(String flowKey) {
+            this.flowKey = flowKey;
+        }
+
+        public String getStartNode() {
+            return startNode;
+        }
+
+        public void setStartNode(String startNode) {
+            this.startNode = startNode;
+        }
+
+        public int getIsFormal() {
+            return isFormal;
+        }
+
+        public void setIsFormal(int isFormal) {
+            this.isFormal = isFormal;
+        }
+
+        public int getIsPrintForm() {
+            return isPrintForm;
+        }
+
+        public void setIsPrintForm(int isPrintForm) {
+            this.isPrintForm = isPrintForm;
+        }
+
+        public Object getAuthorizeRight() {
+            return authorizeRight;
+        }
+
+        public void setAuthorizeRight(Object authorizeRight) {
+            this.authorizeRight = authorizeRight;
+        }
+
+        public Object getTaskUrl() {
+            return taskUrl;
+        }
+
+        public void setTaskUrl(Object taskUrl) {
+            this.taskUrl = taskUrl;
+        }
+
+        @Override
+        public String toString() {
+            return "ResultsBean{" +
+                    "createBy=" + createBy +
+                    ", createtime=" + createtime +
+                    ", updatetime=" + updatetime +
+                    ", updateBy=" + updateBy +
+                    ", runId=" + runId +
+                    ", defId=" + defId +
+                    ", subject='" + subject + '\'' +
+                    ", creatorId=" + creatorId +
+                    ", creator='" + creator + '\'' +
+                    ", busDescp=" + busDescp +
+                    ", status=" + status +
+                    ", actInstId='" + actInstId + '\'' +
+                    ", actDefId='" + actDefId + '\'' +
+                    ", businessKey='" + businessKey + '\'' +
+                    ", businessUrl='" + businessUrl + '\'' +
+                    ", endTime=" + endTime +
+                    ", duration=" + duration +
+                    ", processName='" + processName + '\'' +
+                    ", pkName='" + pkName + '\'' +
+                    ", tableName='" + tableName + '\'' +
+                    ", parentId=" + parentId +
+                    ", startOrgName='" + startOrgName + '\'' +
+                    ", startOrgId=" + startOrgId +
+                    ", recover=" + recover +
+                    ", formDefId=" + formDefId +
+                    ", dsAlias=" + dsAlias +
+                    ", formKeyUrl=" + formKeyUrl +
+                    ", formType=" + formType +
+                    ", relthrow=" + relthrow +
+                    ", grade=" + grade +
+                    ", lastSubmitDuration=" + lastSubmitDuration +
+                    ", typeId=" + typeId +
+                    ", typeName=" + typeName +
+                    ", tagids=" + tagids +
+                    ", orgName=" + orgName +
+                    ", allowBackToStart=" + allowBackToStart +
+                    ", allowFinishedDivert=" + allowFinishedDivert +
+                    ", copyId=" + copyId +
+                    ", flowKey='" + flowKey + '\'' +
+                    ", startNode='" + startNode + '\'' +
+                    ", isFormal=" + isFormal +
+                    ", isPrintForm=" + isPrintForm +
+                    ", authorizeRight=" + authorizeRight +
+                    ", taskUrl=" + taskUrl +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "CompleteMattersResponse{" +
+                "totalCounts=" + totalCounts +
+                ", results=" + results +
+                '}';
+    }
+}

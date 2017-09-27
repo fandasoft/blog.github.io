@@ -1,0 +1,51 @@
+package com.gagakj.intel4android.network.interfaces;
+
+import com.gagakj.intel4android.network.model.AlreadyMattersResponse;
+import com.gagakj.intel4android.network.model.CompleteMattersResponse;
+import com.gagakj.intel4android.network.model.LoginRespose;
+import com.gagakj.intel4android.network.model.PendMattersResponse;
+
+import java.util.HashMap;
+
+import retrofit2.http.POST;
+import retrofit2.http.QueryMap;
+import rx.Observable;
+
+/**
+ * 当前类注释:网络请求接口
+ * 项目名：Ssds4Android
+ * 包名：com.gagakj.ssds4android.network.interfaces
+ * 作者：江清清 on 2017/4/27 15:07
+ * 邮箱：jiangqq@gagakj.com
+ * QQ： 781931404
+ * 公司：南通嘎嘎软件科技有限公司
+ * 站点:<a href="http://www.gagakj.com">www.gagakj.com</a>
+ */
+
+
+public interface INetInterface {
+    /**
+     * 待办列表
+     * @param params
+     * @return
+     */
+    @POST("mobile/bpm/bpmMobileTask/pendingMatters.ht")
+    Observable<PendMattersResponse> pendingMatters(@QueryMap HashMap<String, String> params);
+
+
+    /**
+     * 在办列表
+     * @param params
+     * @return
+     */
+    @POST("platform/mobile/mobileTask/alreadyMatters.ht")
+    Observable<AlreadyMattersResponse> alreadyMatters(@QueryMap HashMap<String, String> params);
+
+    /**
+     * 已办列表
+     * @param params
+     * @return
+     */
+    @POST("platform/mobile/mobileTask/completedMatters.ht")
+    Observable<CompleteMattersResponse> completeMatters(@QueryMap HashMap<String, String> params);
+}
